@@ -1,5 +1,5 @@
 Spree::Core::Engine.routes.draw do
   namespace :admin do
-    resources :roles, :except => [:show, :destroy]
+    resources :roles, :except => [:show]
   end
 end
