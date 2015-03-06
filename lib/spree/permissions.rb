@@ -32,7 +32,8 @@ module Spree
       end
       current_ability.can [:read], Spree::State
       current_ability.can [:read], Spree::Country
-
+      current_ability.can :admin, 'spree/admin/search'
+      current_ability.can :users, 'spree/admin/search'
     end
 
     define_method('default-admin-permissions') do |current_ability, user|

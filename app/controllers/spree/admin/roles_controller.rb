@@ -8,6 +8,18 @@ module Spree
         @roles = Spree::Role.page(params[:page])
       end
 
+      def destroy
+        @role = Spree::Role.find(params[:id])
+        @role.destroy
+
+        flash[:success] = Spree.t('notice_messages.role_deleted')
+
+        respond_with(@role) do |format|
+          format.html { redirect_to collection_url }
+          format.js  { render_js_for_destroy }
+        end
+      end
+
       private
         def permitted_resource_params
           params.require(:role).permit(:name, :permission_ids => [])

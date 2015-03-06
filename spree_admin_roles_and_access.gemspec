@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = 'spree_admin_roles_and_access'
   s.version     = '1.2.3'
   s.summary     = 'Dynamically defines roles and grants it permissions'
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1'
   s.files = Dir['LICENSE', 'README.md', 'app/**/*', 'config/**/*', 'lib/**/*', 'db/**/*']
 
   s.author    = "Nishant 'CyRo' Tuteja"
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.1'
+  s.add_dependency 'spree_core', '~> 3.1.0.beta'
   s.add_dependency 'spree_auth_devise'
 
   s.add_development_dependency 'capybara'
