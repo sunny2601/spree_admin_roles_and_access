@@ -8,5 +8,6 @@ en:
     listing_roles: "Listing Roles"
     roles: "Roles"
     name: "Name"
+    discount_percentage: "Discount Percentage"
     permissions: "Permissions"
     save_changes: "Save Changes"
