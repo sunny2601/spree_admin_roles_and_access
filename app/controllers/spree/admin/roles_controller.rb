@@ -22,7 +22,7 @@ module Spree
 
       private
         def permitted_resource_params
-          params.require(:role).permit(:name, :permission_ids => [])
+          params.require(:role).permit!
         end
 
         def load_permissions
