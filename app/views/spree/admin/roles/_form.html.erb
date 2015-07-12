@@ -12,6 +12,14 @@
       </div>
     </div>
     <div class="form-group">
+      <label for="role[discount_percentage]" class="col-xs-6 col-md-4">
+        <%= Spree.t(:discount_percentage) %>
+      </label>
+      <div class="col-xs-12 col-sm-6 col-md-8">
+        <%= text_field_tag 'role[discount_percentage]', @role.discount_percentage, :id => "role[discount_percentage]", :class =>"form-control" %>
+      </div>
+    </div>
+    <div class="form-group">
       <label  class="col-xs-6 col-md-4 control-label"><%= Spree.t(:permissions) %>:</ttlabel>
       <% @permissions.each do |permission| %>
         <div class="col-xs-12 col-sm-6 col-md-8">
